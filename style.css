@@ -251,6 +251,11 @@ nav a.active-nav::after {
     position: relative;
 }
 
+.about-head {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
 .about-portrait {
     aspect-ratio: 4 / 5;
     overflow: hidden;
@@ -261,13 +266,11 @@ nav a.active-nav::after {
     height: 100%;
     object-fit: cover;
     object-position: 54% 35%;
-    filter: grayscale(1);
     transform: scale(1.06);
-    transition: filter 1.2s var(--ease-out), transform 1.6s var(--ease-out);
+    transition: transform 1.6s var(--ease-out);
 }
 
 .about-portrait:hover img {
-    filter: grayscale(0);
     transform: scale(1);
 }
 
