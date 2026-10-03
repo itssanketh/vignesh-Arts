@@ -43,7 +43,7 @@ Built with plain **HTML, CSS and JavaScript**. There are no frameworks, no libra
 No install needed. Serve the folder with any static server:
 
 ```bash
-git clone https://github.com/sanketh908/vignesh-Arts.git
+git clone https://github.com/itssanketh/vignesh-Arts.git
 cd vignesh-Arts
 python3 -m http.server 8000
 ```
