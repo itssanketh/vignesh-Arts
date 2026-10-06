@@ -385,6 +385,76 @@ nav a.active-nav::after {
     transform: scaleX(0);
 }
 
+/* Order form */
+.order-form {
+    display: grid;
+    gap: 1.4rem;
+    max-width: 34rem;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.order-form label {
+    display: grid;
+    gap: 0.5rem;
+    font-size: 0.74rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.order-form input,
+.order-form textarea {
+    font: inherit;
+    font-size: 1rem;
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--paper);
+    background: var(--ink-2);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 0.9rem 1rem;
+    width: 100%;
+}
+
+.order-form input:focus,
+.order-form textarea:focus {
+    border-color: var(--gold);
+}
+
+.order-form input::file-selector-button {
+    font: inherit;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--paper);
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.6rem 1.2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: color 0.4s, border-color 0.4s;
+}
+
+.order-form input::file-selector-button:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
+/* low specificity so .btn:hover still wins */
+button.btn {
+    font-family: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+}
+
+.order-form .btn {
+    justify-self: center;
+    margin-top: 1rem;
+}
+
 /* Footer */
 footer {
     padding: 2.4rem var(--gutter);
